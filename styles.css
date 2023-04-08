@@ -4,10 +4,16 @@ body {
     
 }
 
+.assignments{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .assignment{
 
-    display: flex;
-    padding: 10px;
+    width: 30%;
+    padding: 20px 10px;
     margin: 10px;
     background: lightgoldenrodyellow;
     border-radius: 25px;
@@ -18,6 +24,8 @@ body {
     margin : 10px;
     padding :10px;
     border: 4px dashed #fff;
+    display: block;
+    margin: auto;
    
 }
 .assignment img:hover {
@@ -32,6 +40,10 @@ h1{
 h1:hover{
     color :#f25c69 ;
     text-align:center; 
+}
+
+h2 {
+    text-align: center;
 }
 
 a{

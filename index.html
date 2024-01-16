@@ -1,155 +1,279 @@
-<div>
-  <link href="./index.css" rel="stylesheet" />
-  <div class="index-container">
-    <div data-role="Header" class="index-navbar-container">
-      <div class="index-navbar">
-        <span class="index-heading">Arshia Eslami</span>
-        <div class="index-links-container">
-          <span class="index-link Navbar-Link">Home</span>
-          <span class="index-link1 Navbar-Link">Projects</span>
-          <span class="index-link2 Navbar-Link">Interests</span>
-        </div>
-        <div data-role="BurgerMenu" class="index-burger-menu">
-          <svg viewBox="0 0 1024 1024" class="index-icon">
-            <path
-              d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-            ></path>
-          </svg>
-        </div>
-        <div data-role="MobileMenu" class="index-mobile-menu">
-          <div class="index-container1">
-            <span class="Card-Heading index-heading1">Logo</span>
-            <div data-role="CloseMobileMenu" class="index-close-menu">
-              <svg viewBox="0 0 1024 1024" class="index-icon2">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="index-container">
+        <div data-role="Header" class="index-navbar-container">
+          <div class="index-navbar">
+            <span class="index-heading">Arshia Eslami</span>
+            <div class="index-links-container">
+              <span class="index-link Navbar-Link">Home</span>
+              <span class="index-link1 Navbar-Link">Projects</span>
+              <span class="index-link2 Navbar-Link">Interests</span>
+            </div>
+            <div data-role="BurgerMenu" class="index-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="index-icon">
                 <path
-                  d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
                 ></path>
               </svg>
             </div>
-          </div>
-          <div class="index-links-container1">
-            <span class="index-link3 Navbar-Link">About</span>
-            <span class="index-link4 Navbar-Link">Experience</span>
-            <span class="index-link5 Navbar-Link">Portofolio</span>
-            <span class="Navbar-Link">Contact</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="index-section-separator"></div>
-    <div class="index-container2">
-      <div class="index-hero">
-        <div class="index-hero-text-container">
-          <h1 class="index-heading2">
-            <br />
-            <span class="index-text01">Smile, Now lets Start!</span>
-            <br />
-          </h1>
-        </div>
-        <img alt="image" src="./src/NewYPic.jpg" class="index-image" />
-      </div>
-      <div class="index-section-separator1"></div>
-    </div>
-    <div class="index-hero1">
-      <div class="index-container3">
-        <div class="index-hero2">
-          <img
-            alt="image"
-            src="/img_2865%20(1)-700h.jpg"
-            class="index-image1"
-          />
-          <div class="index-container4">
-            <h1 class="index-text03">About Me </h1>
-            <h2 class="index-text04">
-              My name is Arshia Eslami. I am an undergraduate student in the
-              University of South Carolina. I&apos;m interested in Computer
-              science, Neuroscience and anything in between. I enjoy solving
-              problems, designing algorithms, coding and biology. I am currently
-              working in the SyRex Lab working on mmWave radars and its sensing
-              applications. 
-            </h2>
-            <div class="index-btn-group"></div>
+            <div data-role="MobileMenu" class="index-mobile-menu">
+              <div class="index-container1">
+                <span class="Card-Heading index-heading1">Logo</span>
+                <div data-role="CloseMobileMenu" class="index-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="index-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="index-links-container1">
+                <span class="index-link3 Navbar-Link">About</span>
+                <span class="index-link4 Navbar-Link">Experience</span>
+                <span class="index-link5 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="index-features">
-      <div class="index-heading-container">
-        <h2 class="index-text05">What am I doing?</h2>
-      </div>
-      <div class="index-cards-container">
-        <div class="index-card">
-          <div class="index-icon-container">
-            <img
-              alt="pastedImage"
-              src="/pastedimage-0bko-200h.png"
-              class="index-pasted-image"
-            />
-          </div>
-          <div class="index-content-container">
-            <span class="index-heading3">Research</span>
-            <span class="index-text06">
-              <span>
-                I am currently working in Syrex Lab Working under supervision of
-                Dr. Sanjib Sur. I help by designing machine learning models.
-              </span>
-              <br />
-            </span>
-          </div>
-        </div>
-        <div class="index-card1">
-          <div class="index-icon-container1">
+        <div class="index-section-separator"></div>
+        <div class="index-container2">
+          <div class="index-hero">
+            <div class="index-hero-text-container">
+              <h1 class="index-heading2">
+                <br />
+                <span class="index-text01">Smile, Now lets Start!</span>
+                <br />
+              </h1>
+            </div>
             <img
               alt="image"
-              src="/weather_vane_with_sc_icon_rgb_azalea-200h.png"
-              class="index-image2"
+              src="public/src/newypic-600w.jpg"
+              class="index-image"
             />
           </div>
-          <div class="index-content-container1">
-            <span class="index-heading4">Study</span>
-            <span class="index-text09">
-              I am currently studying Computer Science and Neuroscience at the
-              University of South Carolina
-            </span>
+          <div class="index-section-separator1"></div>
+        </div>
+        <div class="index-hero1">
+          <div class="index-container3">
+            <div class="index-hero2">
+              <img
+                alt="image"
+                src="public/src/torontopic-700h.jpg"
+                class="index-image1"
+              />
+              <div class="index-container4">
+                <h1 class="index-text03">About Me&nbsp;</h1>
+                <h2 class="index-text04">
+                  My name is Arshia Eslami. I am an undergraduate student in the
+                  University of South Carolina. I'm interested in Computer
+                  science, Neuroscience and anything in between. I enjoy solving
+                  problems, designing algorithms, coding and biology. I am
+                  currently working in the SyRex Lab working on mmWave radars
+                  and its sensing applications.&nbsp;
+                </h2>
+                <div class="index-btn-group"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="index-card2">
-          <div class="index-icon-container2">
-            <img alt="pastedImage" src="/pastedimage-bxw6-200w.png" />
+        <div class="index-features">
+          <div class="index-heading-container">
+            <h2 class="index-text05">What am I doing?</h2>
           </div>
-          <div class="index-content-container2">
-            <span class="index-heading5 Card-Heading">Outdoor</span>
-            <span class="index-text10">
-              I Love outdoor activities. They are fun and refreshing. All sorts
-              are welcome whether its&apos;s camping or rock climbing.
-            </span>
+          <div class="index-cards-container">
+            <div class="index-card">
+              <div class="index-icon-container">
+                <img
+                  alt="pastedImage"
+                  src="public/src/syrex-200h.png"
+                  class="index-pasted-image"
+                />
+              </div>
+              <div class="index-content-container">
+                <span class="index-heading3">Research</span>
+                <span class="index-text06">
+                  <span>
+                    I am currently working in Syrex Lab Working under
+                    supervision of Dr. Sanjib Sur. I help by designing machine
+                    learning models.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="index-card1">
+              <div class="index-icon-container1">
+                <img
+                  alt="image"
+                  src="public/src/gamecock-200h.png"
+                  class="index-image2"
+                />
+              </div>
+              <div class="index-content-container1">
+                <span class="index-heading4">Study</span>
+                <span class="index-text09">
+                  I am currently studying Computer Science and Neuroscience at
+                  the University of South Carolina
+                </span>
+              </div>
+            </div>
+            <div class="index-card2">
+              <div class="index-icon-container2">
+                <img alt="pastedImage" src="public/src/mww-200w.png" />
+              </div>
+              <div class="index-content-container2">
+                <span class="index-heading5 Card-Heading">Outdoor</span>
+                <span class="index-text10">
+                  I Love outdoor activities. They are fun and refreshing. All
+                  sorts are welcome whether its's camping or rock climbing.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="index-section-separator2"></div>
+        <footer class="index-footer">
+          <div class="index-container5">
+            <div class="index-logo"></div>
+            <div class="index-links-container2">
+              <div class="index-container6"></div>
+              <div class="index-container7">
+                <div class="index-contact">
+                  <span class="index-text11">Contact Me</span>
+                  <span class="index-text12">
+                    <span>Arshia.esl83@gmail.com</span>
+                    <br />
+                    <br />
+                  </span>
+                </div>
+                <div class="index-socials"></div>
+              </div>
+            </div>
+          </div>
+          <div class="index-separator"></div>
+        </footer>
+        <div class="index-section-separator3"></div>
+        <div class="index-section-separator4"></div>
       </div>
     </div>
-    <div class="index-section-separator2"></div>
-    <footer class="index-footer">
-      <div class="index-container5">
-        <div class="index-logo"></div>
-        <div class="index-links-container2">
-          <div class="index-container6"></div>
-          <div class="index-container7">
-            <div class="index-contact">
-              <span class="index-text11">Contact Me</span>
-              <span class="index-text12">
-                <span>Arshia.esl83@gmail.com</span>
-                <br />
-                <br />
-              </span>
-            </div>
-            <div class="index-socials"></div>
-          </div>
-        </div>
-      </div>
-      <div class="index-separator"></div>
-    </footer>
-    <div class="index-section-separator3"></div>
-    <div class="index-section-separator4"></div>
-  </div>
-</div>
-
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
